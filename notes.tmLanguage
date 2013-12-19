@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>fileTypes</key>
+	<array>
+		<string>note</string>
+	</array>
+	<key>name</key>
+	<string>Note</string>
+	<key>patterns</key>
+	<array>
+		<dict>
+			<key>comment</key>
+			<string>Line Item</string>
+			<key>match</key>
+			<string>(^|^\t|^\t\t|^\t\t\t)\-</string>
+			<key>name</key>
+			<string>entity.other.attribute-name.note</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Header</string>
+			<key>match</key>
+			<string>^\:.+</string>
+			<key>name</key>
+			<string>entity.other.attribute-name.note</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Hashtag</string>
+			<key>match</key>
+			<string>\#\S*</string>
+			<key>name</key>
+			<string>keyword.text.note</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Open Question</string>
+			<key>match</key>
+			<string>(^|^\t|^\t\t|^\t\t\t)\?.+|</string>
+			<key>name</key>
+			<string>string.text.note</string>
+		</dict>
+		<dict>
+			<key>comment</key>
+			<string>Contact Tag</string>
+			<key>match</key>
+			<string>\@\S*</string>
+			<key>name</key>
+			<string>constant.numeric.note</string>
+		</dict>
+	</array>
+	<key>scopeName</key>
+	<string>text.note</string>
+	<key>uuid</key>
+	<string>e3bdba1b-7d51-4275-9cf2-632165f5bdbc</string>
+</dict>
+</plist>

@@ -1,0 +1,13 @@
+# [PackageDev] target_format: plist, ext: tmLanguage
+---
+name: Note
+scopeName: text.note
+fileTypes: [note]
+uuid: e3bdba1b-7d51-4275-9cf2-632165f5bdbc
+
+patterns:
+- {comment: Line Item, match: '(^|^\t|^\t\t|^\t\t\t)\-', name: entity.other.attribute-name.note}
+- {comment: Header, match: '^\:.+', name: entity.other.attribute-name.note}
+- {comment: Hashtag, match: '\#\S*', name: keyword.text.note}
+- {comment: Open Question, match: '(^|^\t|^\t\t|^\t\t\t)\?.+|', name: string.text.note}
+- {comment: Contact Tag, match: '\@\S*', name: constant.numeric.note}
